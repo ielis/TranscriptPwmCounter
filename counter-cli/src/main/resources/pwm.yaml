@@ -1,0 +1,58 @@
+# Sample file with PWM definition
+# '---' separates individual PWMs
+# 3 required fields are: [name, threshold, matrix]
+# 	- name will be included in result
+#	- result will not be included if its score is lower than threshold value
+#	- matrix - each column corresponds to position in evaluated sequence
+#		- rows represent position weights for nucleotides in this order: A,C,G,T
+# source: http://krainer01.cshl.edu/cgi-bin/tools/ESE3/esefinder.cgi?process=matrices
+---
+# name: SRSF1(SF2/ASF)
+name: ESEFINDER_SRSF1
+threshold: 1.956
+matrix:
+  - [-1.14, 0.62, -1.58,  1.32, -1.58, -1.58,  0.62]
+  - [ 1.37, -1.1,  0.73,  0.33,  0.94, -1.58, -1.58]
+  - [-0.21, 0.17,  0.48, -1.58,  0.33,  0.99, -0.11]
+  - [-1.58, -0.5, -1.58, -1.13, -1.58, -1.13,  0.27]
+
+---
+# source: http://krainer01.cshl.edu/cgi-bin/tools/ESE3/esefinder.cgi?process=matrices
+# name: SRSF1(SF2/ASF,IgM-BRCA1)
+name: ESEFINDER_SRSF1_IGM
+threshold: 1.867
+matrix:
+  - [-1.58,  0.15, -0.97,  0.74, -1.19, -0.75,  0.43]
+  - [ 1.55, -0.53,  0.79,  0.33,  0.72, -0.62, -0.99]
+  - [-1.35,  0.44,  0.41, -0.98,  0.51,  1.03,  0.00]
+  - [-1.55, -0.28, -1.28, -0.92, -1.09, -0.52,  0.20]
+---
+# source: http://krainer01.cshl.edu/cgi-bin/tools/ESE3/esefinder.cgi?process=matrices
+# name: SRSF2(SC35)
+name: ESEFINDER_SRSF2
+threshold: 2.383
+matrix:
+  - [-0.88,  0.09, -0.06, -1.58,  0.09, -0.41, -0.06,  0.23]
+  - [-1.16, -1.58,  0.95,  1.11,  0.56,  0.86,  0.32, -1.58]
+  - [ 0.87,  0.45, -1.36, -1.58, -0.33, -0.05, -1.36,  0.68]
+  - [-1.18, -0.20,  0.38,  0.88, -0.20, -0.86,  0.96, -1.58]
+---
+# source: http://krainer01.cshl.edu/cgi-bin/tools/ESE3/esefinder.cgi?process=matrices
+# name: SRSF5(SRp40)
+name: ESEFINDER_SRSF5
+threshold: 2.670
+matrix:
+  - [-0.13, -1.58,  1.28, -0.33,  0.97, -0.13, -1.58]
+  - [ 0.56,  0.68, -1.12,  1.24, -0.77,  0.13, -0.05]
+  - [-1.58, -0.14, -1.33, -0.48, -1.58,  0.44,  0.80]
+  - [ 0.92,  0.37,  0.23, -1.14,  0.72, -1.58, -1.58]
+---
+# source: http://krainer01.cshl.edu/cgi-bin/tools/ESE3/esefinder.cgi?process=matrices
+# name: SRSF6(SRp55)
+name: ESEFINDER_SRSF6
+threshold: 2.676
+matrix:
+  - [-0.66,  0.11, -0.66,  0.11, -1.58,  0.61]
+  - [ 0.39, -1.58,  1.48, -1.58, -1.58,  0.98]
+  - [-1.58,  0.72, -1.58,  0.72,  0.21, -0.79]
+  - [ 1.22, -1.58, -0.07, -1.58,  1.02, -1.58]
